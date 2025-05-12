@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wake Up Scheduled</title>
+  <link rel="stylesheet" href="./schedule_success.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="window.location.href='screen.html'">
+  </div>
+
+  <div class="container">
+    <img src="./Images/tickmark.png" alt="Booked Successfully" width="100rem" height="100rem">
+    <h2>Call Scheduled Successfully.</h2>
+    <div class="time-display" id="scheduled-time"></div>
+  </div>
+
+  <script>
+    const time = localStorage.getItem('scheduledTime');
+    document.getElementById('scheduled-time').innerText = time;
+  </script>
+
+</body>
+</html>

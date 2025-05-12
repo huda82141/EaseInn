@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .header {
+    background: #d7b98d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .home-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .service-card {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .service-info {
+    background: rgba(0, 51, 102, 0.8);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bell-icon {
+    width: 30px;
+    height: 30px;
+    background: url('./Images/bell_light.png') no-repeat center/contain;
+    border-radius: 50%;
+  }
+  
+  .service-card.selected .bell-icon {
+    background: url('./Images/bell_dark.png') no-repeat center/contain;
+  }
+  
+  .confirm-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  

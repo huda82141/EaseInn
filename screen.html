@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ease Inn</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: inherit;
+            background-color: #fff;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .service:hover {
+            background-color: #f0f0f0;
+        }
+
+        .cd-imgs {
+            width: 50px; /* Adjust image size */
+            height: 50px;
+        }
+
+        .service-text {
+            flex-grow: 1;
+            margin-left: 15px; /* Space between image & text */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img id="logo" src="./Images/logo-no-bg.png" height="30px"/>
+    </header>
+
+    <div class="room-info">
+        <h2>Room 123</h2>
+        <p>Check-in: <b>12:00 PM, 20-Feb-25</b></p>
+        <p>Check-out: <b>11:00 AM, 25-Feb-25</b></p>
+    </div>
+
+    <div class="recent-orders">
+        <h3>Recent Orders:</h3>
+        <div class="order">Breakfast - 8:00 AM</div>
+        <div class="order">Laundry Service</div>
+    </div>
+
+    <h3 class="services-heading">SERVICES</h3>
+    
+    <div class="services">
+        <a href="./food1.html" class="service">
+            <img class="cd-imgs" src="./Images/image 2.png" alt="Dining">
+            <p class="service-text">Food & Beverage ></p>
+        </a>
+        <a href="./services.html" class="service">
+            <img class="cd-imgs" src="./Images/image 3.png" alt="Housekeeping">
+            <p class="service-text">Housekeeping & Laundry ></p>
+        </a>
+        <a href="./assistance.html" class="service">
+            <img class="cd-imgs" src="./Images/image 4.png" alt="Concierge">
+            <p class="service-text">Guest Assistance & Concierge ></p>
+        </a>
+        <a href="./travel.html" class="service">
+            <img class="cd-imgs" src="./Images/image 5.png" alt="Transport">
+            <p class="service-text">Travel & Transport Services ></p>
+        </a>
+        <a href="./entertainment.html" class="service">
+            <img class="cd-imgs" src="./Images/image 6.png" alt="Entertainment">
+            <p class="service-text">Entertainment & Special Requests ></p>
+        </a>
+    </div>
+
+    <button class="easebot-btn" onclick="window.location.href='./EaseInn-chatbot/frontend/chatbot.html'">Ask EaseBot 🤖 – Your Smart Hotel Assistant!</button>
+</body>
+</html>

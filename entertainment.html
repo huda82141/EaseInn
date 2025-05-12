@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EaseInn Services</title>
+  <link rel="stylesheet" href="entertainment.css">
+</head>
+<body>
+  <header class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="window.location.href='screen.html'">
+  </header>
+  <main class="container">
+    <section class="card">
+      <button class="service-btn" onclick="toggleDropdown('spa')">Spa & Wellness</button>
+      <div id="spa" class="dropdown hidden">
+        <label class="dropdown-label">Preferred Time:
+          <input type="time" id="spaTime">
+        </label>
+        <button class="action-btn" onclick="bookAppointment()">Book Appointment</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <button class="service-btn" onclick="toggleDropdown('tours')">Local Tours & Sightseeing</button>
+      <div id="tours" class="dropdown hidden">
+        <select id="tourOptions" onchange="showTourButton()">
+          <option value="">--Select Tour--</option>
+          <option value="heritage">Heritage Tour</option>
+          <option value="city">City Walk</option>
+          <option value="adventure">Adventure Ride</option>
+        </select>
+        <button id="bookTourBtn" class="action-btn hidden" onclick="bookTour()">Book Tour</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <button class="service-btn" onclick="location.href='events.html'">Events & Dining Reservations</button>
+    </section>
+
+    <section class="card">
+        <a href="tel:+911234567890" class="service-btn">In-Room Entertainment</a>
+    </section>
+
+  </main>
+  <script src="entertainment.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EaseInn Assistance</title>
+  <link rel="stylesheet" href="assistance.css">
+  <script>
+    function goHome() {
+      window.location.href = "home.html"; // Adjust this if your home page has a different name
+    }
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="window.location.href='screen.html'">
+  </header>
+
+  <main>
+    <div class="grid-container">
+      
+      <!-- Call Reception -->
+      <a href="tel:+1234567890" class="assist-card">
+        <img src="./Images/call_recp.png" alt="Call Reception" class="assist-icon">
+        <p>Call Reception</p>
+      </a>
+
+      <!-- Lost & Found -->
+      <a href="lost_found.html" class="assist-card">
+        <img src="./Images/lost&found.png" alt="Lost and Found" class="assist-icon">
+        <p>Lost & Found</p>
+      </a>
+
+      <!-- Wake-up Call -->
+      <a href="./schedule.html" class="assist-card">
+        <img src="./Images/wake_up_call.png" alt="Wake-up Call" class="assist-icon">
+        <p>Wake-up call</p>
+      </a>
+
+      <!-- Travel Assistance -->
+      <a href="tel:+1987654321" class="assist-card">
+        <img src="./Images/travel_assistance.png" alt="Travel Assistance" class="assist-icon">
+        <p>Travel Assistance</p>
+      </a>
+
+    </div>
+  </main>
+
+</body>
+</html>

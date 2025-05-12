@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EaseInn Services</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="goHome()">
+  </header>
+
+  <main>
+    <div class="service-card" onclick="toggleSelection(this)">
+      <img src="./Images/room cleaning.jpg" alt="Room Cleaning" class="service-img">
+      <div class="service-info">
+        <h2>Room Cleaning</h2>
+        <div class="bell-icon"></div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleSelection(this)">
+      <img src="./Images/towels.jpg" alt="Linens & Towels" class="service-img">
+      <div class="service-info">
+        <h2>Linens & Towels</h2>
+        <div class="bell-icon"></div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleSelection(this)">
+      <img src="./Images/laundry services.jpg" alt="Laundry & Ironing" class="service-img">
+      <div class="service-info">
+        <h2>Laundry & Ironing</h2>
+        <div class="bell-icon"></div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleSelection(this)">
+      <img src="./Images/toilet ess.jpg" alt="Toiletries & Essentials" class="service-img">
+      <div class="service-info">
+        <h2>Toiletries & Essentials</h2>
+        <div class="bell-icon"></div>
+      </div>
+    </div>
+
+    <button class="confirm-btn" onclick="confirmBooking()">Confirm Booking</button>
+  </main>
+
+  <script src="services.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EaseInn Menu</title>
+  <link rel="stylesheet" href="./style_food.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>EASE INN</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+        <!-- Main Course Section -->
+        <section class="menu-section">
+            <h2>Main Course</h2>
+      
+            <h3>Non-Veg</h3>
+            <div class="grid">
+              <div class="card">
+                <img src="./Images/Grilled.png" alt="Grilled Chicken Steak">
+                <div class="info">
+                  <p>Grilled Chicken Steak – ₹599</p>
+                  <button onclick="addToCart('Grilled Chicken Steak', 599)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/butter_chicken.png" alt="Butter Chicken & Naan">
+                <div class="info">
+                  <p>Butter Chicken & Naan – ₹499</p>
+                  <button onclick="addToCart('Butter Chicken & Naan', 499)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/chicken_biryani.png" alt="Chicken Biryani">
+                <div class="info">
+                  <p>Chicken Biryani – ₹399</p>
+                  <button onclick="addToCart('Chicken Biryani', 399)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/lamb_rogan.png" alt="Lamb Rogan Josh">
+                <div class="info">
+                  <p>Lamb Rogan Josh – ₹649</p>
+                  <button onclick="addToCart('Lamb Rogan Josh', 649)">🛒</button>
+                </div>
+              </div>
+            </div>
+      
+            <h3>Veg</h3>
+            <div class="grid">
+              <div class="card">
+                <img src="./Images/paneer_butter.png" alt="Paneer Butter Masala">
+                <div class="info">
+                  <p>Paneer Butter Masala – ₹399</p>
+                  <button onclick="addToCart('Paneer Butter Masala', 399)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/dal_makhani.png" alt="Dal Makhani with Rice">
+                <div class="info">
+                  <p>Dal Makhani with Rice – ₹349</p>
+                  <button onclick="addToCart('Dal Makhani with Rice', 349)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/penne_alfredo.png" alt="Penne Alfredo Pasta">
+                <div class="info">
+                  <p>Penne Alfredo Pasta – ₹399</p>
+                  <button onclick="addToCart('Penne Alfredo Pasta', 399)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/veg_hakka.png" alt="Veg Hakka Noodles">
+                <div class="info">
+                  <p>Veg Hakka Noodles – ₹299</p>
+                  <button onclick="addToCart('Veg Hakka Noodles', 299)">🛒</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Snacks & Beverages Section -->
+          <section class="menu-section">
+            <h2>Snacks & Beverages</h2>
+      
+            <h3>Quick Bites</h3>
+            <div class="grid">
+              <div class="card">
+                <img src="./Images/french_fries.png" alt="French Fries">
+                <div class="info">
+                  <p>French Fries – ₹199</p>
+                  <button onclick="addToCart('French Fries', 199)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/chicken_tacos.png" alt="Chicken Tacos">
+                <div class="info">
+                  <p>Chicken Tacos – ₹349</p>
+                  <button onclick="addToCart('Chicken Tacos', 349)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/cheese_nachos.png" alt="Cheese Nachos">
+                <div class="info">
+                  <p>Cheese Nachos – ₹299</p>
+                  <button onclick="addToCart('Cheese Nachos', 299)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/veg_club_sandwich.png" alt="Veg Club Sandwich">
+                <div class="info">
+                  <p>Veg Club Sandwich – ₹249</p>
+                  <button onclick="addToCart('Veg Club Sandwich', 249)">🛒</button>
+                </div>
+              </div>
+            </div>
+      
+            <h3>Beverages</h3>
+            <div class="grid">
+              <div class="card">
+                <img src="./Images/cold_coffee.png" alt="Cold Coffee">
+                <div class="info">
+                  <p>Cold Coffee – ₹199</p>
+                  <button onclick="addToCart('Cold Coffee', 199)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/iced_lemon.png" alt="Iced Lemon Tea">
+                <div class="info">
+                  <p>Iced Lemon Tea – ₹149</p>
+                  <button onclick="addToCart('Iced Lemon Tea', 149)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/capuccino.png" alt="Cappuccino">
+                <div class="info">
+                  <p>Cappuccino – ₹179</p>
+                  <button onclick="addToCart('Cappuccino', 179)">🛒</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Images/fresh_orange_juice.png" alt="Fresh Orange Juice">
+                <div class="info">
+                  <p>Fresh Orange Juice – ₹229</p>
+                  <button onclick="addToCart('Fresh Orange Juice', 229)">🛒</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+
+    <!-- Cart Button -->
+    <div class="cart-btn">
+      <button onclick="goToCart()">Go To Cart</button>
+    </div>
+
+  </main>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cartItems"></ul>
+    <p id="cartTotal">Total: ₹0</p>
+
+    <!-- Schedule for Later Option -->
+    <div>
+      <label for="scheduleForLater">Schedule for Later</label>
+      <input type="checkbox" id="scheduleForLater" onchange="toggleScheduleForLater()">
+    </div>
+
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./food_script.js"></script>
+
+</body>
+</html>

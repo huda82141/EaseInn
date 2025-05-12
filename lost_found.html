@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ease Inn</title>
+  <link rel="stylesheet" href="lost_found.css">
+</head>
+<body>
+  <header>
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="goHome()">
+  </header>
+
+  <main>
+    <form id="itemForm">
+      <label for="description">Describe Your Item. <span class="required">*</span></label>
+      <textarea id="description" placeholder="Type Description..." required></textarea>
+
+      <label for="imageUpload">Add Images</label>
+      <div class="image-upload">
+        <input type="file" id="imageUpload" accept="image/*" multiple>
+        <div class="image-preview" id="imagePreview">
+          <img src="./Images/add_image.png" alt="Add Image Icon">
+        </div>
+      </div>
+
+      <button onclick="window.location.href='lost_con.html'">Submit</button>
+    </form>
+  </main>
+
+  <script src="lost_found.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule Wake Up</title>
+  <link rel="stylesheet" href="./schedule_success.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="goHome()">
+  </div>
+
+  <div class="container">
+    <div class="time-picker">
+      <select id="hours">
+        <!-- Hours -->
+        <script>
+          for (let i = 1; i <= 12; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+          }
+        </script>
+      </select>
+      <span>h</span>
+
+      <select id="minutes">
+        <!-- Minutes -->
+        <script>
+          for (let i = 0; i < 60; i++) {
+            document.write(`<option value="${i}">${i.toString().padStart(2, '0')}</option>`);
+          }
+        </script>
+      </select>
+      <span>min</span>
+
+      <select id="period">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </div>
+
+    <button class="btn" onclick="scheduleWakeUp()">Schedule Wake Up</button>
+  </div>
+
+  <script>
+    function scheduleWakeUp() {
+      const hour = document.getElementById('hours').value;
+      const minute = document.getElementById('minutes').value;
+      const period = document.getElementById('period').value;
+
+      // Save selected time to localStorage
+      localStorage.setItem('scheduledTime', `${hour} h ${minute} min ${period}`);
+
+      // Redirect to success page
+      window.location.href = 'success.html';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Booked</title>
+  <link rel="stylesheet" href="./schedule_success.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="window.location.href='screen.html'">
+  </div>
+
+  <div class="container">
+    <img src="./Images/tickmark.png" alt="Booked Successfully" width="100rem" height="100rem">
+    <h2>Tour Booked Successfully.</h2>
+    <div class="time-display" id="tourDisplay"></div>
+  </div>
+
+  <script>
+    const tour = localStorage.getItem('bookedTour');
+    const tourNames = {
+      heritage: "Heritage Tour",
+      city: "City Walk",
+      adventure: "Adventure Ride"
+    };
+
+    document.getElementById('tourDisplay').innerText =
+      tour ? `Selected Tour: ${tourNames[tour] || tour}` : "No tour selected.";
+  </script>
+
+</body>
+</html>

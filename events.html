@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events & Dining</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+    background: #d7b98d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    }
+    .logo {
+      height: 50px;
+      margin-right: 15px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    .home-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    }
+    .container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-body h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .card-body p {
+      margin: 0;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="./Images/logo-no-bg.png" alt="EaseInn Logo" class="logo"> 
+    <img src="./Images/home.png" alt="Home Icon" class="home-icon" onclick="window.location.href='screen.html'">
+  </header>
+  <main class="container">
+    <div class="card">
+      <img src="./Images/mini_concert.jpg" alt="Concert">
+      <div class="card-body">
+        <h3>Mini Concert</h3>
+        <p>Enjoy live music under the stars every weekend from 8 PM to 10 PM.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Images/musical_play.webp" alt="Musical Play">
+      <div class="card-body">
+        <h3>Musical Play</h3>
+        <p>Experience our in-house theatre group’s take on classic musical tales.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Images/magic_show.jpg" alt="Magic Show">
+      <div class="card-body">
+        <h3>Magic Show</h3>
+        <p>A family-friendly magic show with tricks, illusions, and audience interaction.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
